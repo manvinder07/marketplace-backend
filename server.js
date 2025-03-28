@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 // Allow CORS (Update origin for frontend)
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://yourfrontenddomain.com"], // Add frontend URL when deployed
+  origin: [process.env.FRONTEND_URL || "http://localhost:3000"],
   methods: "GET",
 };
 app.use(cors(corsOptions));
