@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
-console.log("RAPIDAPI_KEY:", process.env.RAPIDAPI_KEY); // Check if key is loaded
 
 const app = express();
 const PORT = process.env.PORT || 5000;
